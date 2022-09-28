@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+.nav1{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.nav1 img{
+    width: 60px;
+    height: 60px;
+}
+.nav1 ul{
+    font-weight: bold;
+    display: flex;
+    
+}
+.nav1 ul li{
+    list-style: none;
+    margin-right: 25px ;
+    margin-left: 25px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    border: 1px solid rgb(23, 23, 23);
+    color: rgb(255, 255, 255);
+}
+.nav1 ul li a{
+    text-decoration: none;
+    color: #fcfcfc;
+}
+.nav2{
+    margin: 10px 70px;
+}
+.nav2 ul{
+    display: flex;
+}
+.nav2 ul li{
+    list-style: none;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    color: black;
+}
+.nav2 ul li a{
+    text-decoration:none;
+    color: #fcfcfc;
+}
+main{
+    margin-left: 15px;
+    
+}
