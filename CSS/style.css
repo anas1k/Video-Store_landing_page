@@ -77,7 +77,8 @@ body{
     transition: transform .1s; /* Animation */
 }
 .carte:hover{
-    transform: scale(1.1); /* Scale Up */
+    transform: scale(1.01); /* Scale Up */
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 .text {
@@ -97,4 +98,56 @@ body{
 
 .cartes{
     display: flex;
+}
+
+@media screen and (max-width:500px) {
+    
+    .nav1{
+        width: auto;
+        height: 200px;
+        padding: 5px 20px;
+        background: #000046; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .nav1 img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav1 ul{
+        font-weight: bold;
+    }
+    .nav1 ul li{
+        list-style: none;
+        margin-right: 25px ;
+        margin-left: 25px;
+        height: 30px;
+        line-height: 30px;
+        padding: 2px 10px;
+        border: 1px solid rgb(23, 23, 23);
+        color: rgb(255, 255, 255);
+    }
+    .nav1 ul li a{
+        text-decoration: none;
+        color: #fcfcfc;
+    }
+    .carte {
+        border-radius: 15px;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+        border:0.1px solid #000000;
+        margin-left: 15px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        width: 222px;
+        background-color: rgb(239, 235, 242);
+        height: 420px;
+        transition: transform .1s; /* Animation */
+    }
+    .cartes{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
