@@ -51,7 +51,50 @@ body{
     text-decoration:none;
     color: #fcfcfc;
 }
-main{
+.marg{
+    margin-top: 25px;
     margin-left: 15px;
+    margin-bottom: 45px;
+}
+.green{
+    color :green;
+}
+
+.grey{
+    color: grey;
+}
+
+.carte {
+    border-radius: 15px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    border:0.1px solid #000000;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 222px;
+    background-color: rgb(239, 235, 242);
+    height: 420px;
+    transition: transform .1s; /* Animation */
+}
+.carte:hover{
+    transform: scale(1.1); /* Scale Up */
+}
+
+.text {
     
+    margin-bottom: 3px;
+    margin-left: 15px;
+}
+.bottom {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.carte img {
+    border-radius: 14px;
+    width: 222px;
+}
+
+.cartes{
+    display: flex;
 }
