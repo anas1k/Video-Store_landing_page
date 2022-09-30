@@ -1,44 +1,45 @@
 body{
     margin: 0;
 }
-.nav1{
-    padding: 5px 20px;
+
+.navs{
+    
     display: flex;
     justify-content: space-between;
-    background: #000046; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
+    padding: 5px 20px;
     background: linear-gradient(to left, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.nav1 img{
-    width: 60px;
-    height: 60px;
+.box-image{
+    width: 20px;
+    height: 20px;
 }
-.nav1 ul{
+    .nav2{
+
+}
+.nav2 ul{
     font-weight: bold;
-    display: flex;
-    
+    display: inline-flex;
 }
-.nav1 ul li{
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav2 ul li {
     list-style: none;
-    margin-right: 25px ;
+    margin-right: 25px;
     margin-left: 25px;
     height: 30px;
     line-height: 30px;
     padding: 2px 10px;
-    border: 1px solid rgb(23, 23, 23);
-    color: rgb(255, 255, 255);
 }
-.nav1 ul li a{
-    text-decoration: none;
-    color: #fcfcfc;
-}
-.nav2{
+
+.nav3{
     margin: 10px 70px;
 }
-.nav2 ul{
+.nav3 ul{
     display: flex;
 }
-.nav2 ul li{
+.nav3 ul li *{
     list-style: none;
     margin-right: 15px;
     margin-left: 15px;
@@ -47,7 +48,7 @@ body{
     padding: 2px 10px;
     color: black;
 }
-.nav2 ul li a{
+.nav3 ul li {
     text-decoration:none;
     color: #fcfcfc;
 }
@@ -100,54 +101,80 @@ body{
     display: flex;
 }
 
-@media screen and (max-width:500px) {
-    
+@media screen and (max-width:768px) {
+    .navs{
+        display: block !important;
+    }
     .nav1{
-        width: auto;
-        height: 200px;
-        padding: 5px 20px;
-        background: #000046; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #000046, #1cb5e0); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        margin-left: 47%;
     }
-    .nav1 img{
-        width: 100px;
-        height: 100px;
+    .nav2{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
-    .nav1 ul{
-        font-weight: bold;
+    .nav2 ul li {
+    font-size: 20px;
+    margin-left:26px;
+    margin-right:25px;
     }
-    .nav1 ul li{
-        list-style: none;
-        margin-right: 25px ;
-        margin-left: 25px;
-        height: 30px;
-        line-height: 30px;
-        padding: 2px 10px;
-        border: 1px solid rgb(23, 23, 23);
-        color: rgb(255, 255, 255);
+    .nav2 ul li a {
+    text-decoration: none;
     }
-    .nav1 ul li a{
-        text-decoration: none;
-        color: #fcfcfc;
+    
+    .nav2{
+        margin-left: -60px;
     }
-    .carte {
-        border-radius: 15px;
-        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
-        border:0.1px solid #000000;
-        margin-left: 15px;
-        margin-right: 10px;
-        margin-bottom: 20px;
-        width: 222px;
-        background-color: rgb(239, 235, 242);
-        height: 420px;
-        transition: transform .1s; /* Animation */
-    }
+
     .cartes{
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+}
+
+@media screen and ( max-width:320px) {
+    .navs{
+        display: block !important;
+    }
+    .nav1{
+        margin-left: 40%;
+    }
+    .nav2{
+        display: block !important;
+        
+    }
+    .nav2 ul li {
+        font-size: 10px;
+        margin-left:0px;
+        margin-right:0px;
+        align-items: center;
+    }
+    .nav2 ul li a {
+        text-decoration: none;
+    }
+    
+    .nav2{
+        margin-left: -50px;
+    }
+}
+@media screen and ( max-width:425px) {
+    .navs{
+        display: block !important;
+    }
+    .nav1{
+        margin-left: 43%;
+    }
+    .nav2{
+        display: block;
+    }
+    .nav2 ul li {
+        font-size: 13px;
+        margin-left:10px;
+        margin-right:2px;
+    }
+    .nav2 ul li a {
+        text-decoration: none;
+    }
+    
+    .nav2{
+        margin-left: -50px;
     }
 }
