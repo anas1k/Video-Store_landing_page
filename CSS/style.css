@@ -136,7 +136,7 @@ span{
     }
     
     .nav2{
-        margin-left: 0%;
+        margin-left: 3%;
     }
 
     .cartes{
@@ -255,5 +255,11 @@ span{
 @media screen and (min-width:1020px){
     .nav1 {
         margin-left: 5px;
+    }
+}
+
+@media print {
+    header .nav2{
+        display: none;
     }
 }
