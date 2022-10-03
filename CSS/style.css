@@ -1,29 +1,31 @@
 body{
     margin: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navs{
-    
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 7px 2px;
     background: linear-gradient(to left, #000046, #1cb5e0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .box-image{
     width: 20px;
     height: 20px;
 }
-    .nav2{
 
-}
 .nav2 ul{
     font-weight: bold;
     display: inline-flex;
 }
+
 a{
     color: rgb(255, 255, 255);
-    text-decoration: none;
 }
+
 .nav2 ul li {
     list-style: none;
     margin-right: 25px;
@@ -33,24 +35,35 @@ a{
     padding: 2px 10px;
 }
 
-.nav3{
-    margin: 10px 70px;
+.nav2 a{
+    text-decoration: none;
 }
+
+.nav2 a:hover{
+    text-decoration:underline; 
+}
+
+.nav3{
+    margin: 0;
+}
+
 .nav3 ul{
     display: flex;
 }
-.nav3 ul li *{
+
+.nav3 ul a{
     list-style: none;
-    margin-right: 15px;
-    margin-left: 15px;
-    height: 30px;
-    line-height: 30px;
-    padding: 2px 10px;
+    margin:0;
+    padding: 2px 5px;
     color: black;
 }
+
+span{
+    color: black;
+}
+
 .nav3 ul li {
-    text-decoration:none;
-    color: #fcfcfc;
+    list-style: none;
 }
 .marg{
     margin-top: 25px;
@@ -99,6 +112,7 @@ a{
 
 .cartes{
     display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width:768px) {
@@ -121,52 +135,80 @@ a{
     }
     
     .nav2{
-        margin-left: -60px;
+        margin-left: -10px;
     }
 
     .cartes{
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 }
 
-@media screen and ( max-width:320px) {
-    .navs{
-        display: block !important;
-    }
+@media screen and ( max-width:323px) {
     .nav1{
         margin-left: 40%;
     }
     .nav2{
-        display: block !important;
-        
+        margin-bottom: 0;
     }
     .nav2 ul li {
-        font-size: 10px;
-        margin-left:0px;
-        margin-right:0px;
-        align-items: center;
+        font-size: 10px !important;
+        margin-left: 3px !important;
+        padding: 5px !important;;
     }
     .nav2 ul li a {
         text-decoration: none;
     }
     
     .nav2{
-        margin-left: -50px;
+        margin-left: -70px !important;
     }
 }
-@media screen and ( max-width:425px) {
-    .navs{
-        display: block !important;
+@media screen and ( max-width:380px) {
+    .nav2 ul{
+        padding-left: -90px;
     }
-    .nav1{
-        margin-left: 43%;
+    .nav2 ul li *{
+        font-size: 12px !important;
+        margin: 0;
+        padding: 0;
     }
+    .nav2 ul li a {
+        text-decoration: none;
+    }
+    
     .nav2{
-        display: block;
+        margin-left: -30px!important;
+    }
+}
+@media screen and ( max-width:430px) {
+    
+    .nav1{
+        margin-left: 43%!important;
+    }
+    .nav2 ul{
+        margin-left: 25px;
     }
     .nav2 ul li {
-        font-size: 13px;
+        font-size: 14px !important;
+        margin-left:5px;
+        margin-right:2px;
+    }
+    .nav2 ul li a {
+        text-decoration: none;
+    }
+    
+    .nav2{
+        margin-left: -60px !important;
+    }
+}
+@media screen and ( max-width:500px) {
+    
+    .nav1{
+        margin-left: 45%;
+    }
+    
+    .nav2 ul li {
+        font-size: 12px;
         margin-left:10px;
         margin-right:2px;
     }
@@ -175,6 +217,39 @@ a{
     }
     
     .nav2{
-        margin-left: -50px;
+        margin-left: -34px;
+    }
+}
+@media screen and ( max-width:280px) {
+    .navs{
+        padding-bottom: -15px;
+        padding-left: 5px;
+    }
+    .nav1{
+        margin-left: 38%;
+    }
+
+    .nav2 ul{
+        display: inline-block;
+        padding-left: 120px;
+    }
+    
+    .nav2 ul li {
+        font-size: 9px;
+        margin-left:2px;
+        margin-right:0px;
+    }
+    .nav2 ul li a {
+        text-decoration: none;
+    }
+    
+    .nav2{
+        margin-left: -54px;
+    }
+}
+
+@media screen and (min-width:1020px){
+    .nav1 {
+        margin-left: 5px;
     }
 }
